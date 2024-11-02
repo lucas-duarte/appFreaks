@@ -1,0 +1,7 @@
+{
+  "name": "shape-de-urgencia",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
