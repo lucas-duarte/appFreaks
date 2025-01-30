@@ -1,0 +1,23 @@
+{
+    "receitas": [
+      {
+        "id": 1,
+        "title": "Spaghetti Carbonara",
+        "image": "https://images.ctfassets.net/3vz37y2qhojh/4B2QkY3grTx5oigHJQou1f/a8326779160ea8024265a87c96923763/Olga_30MnSpgCarbonara_Hero-Horizontal-Olga-Ivanova-V3.jpg",
+        "description": "A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper."
+      },
+      {
+        "id": 2,
+        "title": "Chicken Curry",
+        "image": "https://spiceeats.com/wp-content/uploads/2020/02/Mild-Chicken-Curry.jpg",
+        "description": "A flavorful and spicy dish made with chicken, various spices, and coconut milk."
+      },
+      {
+        "id": 3,
+        "title": "Vegetable Stir Fry",
+        "image": "https://food-images.files.bbci.co.uk/food/recipes/sachas_stir-fry_17077_16x9.jpg",
+        "description": "A quick and healthy stir fry with mixed vegetables and a savory sauce."
+      }
+    ]
+  }
+  

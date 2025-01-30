@@ -1,0 +1,46 @@
+<ion-header collapse="condense">
+  <ion-toolbar style="--background: #f7f7f7 !important">
+    <ion-title size="large" color="primary">FREAKS</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <!-- <app-avisos /> -->
+
+  <div class="row px-3 mt-3">
+
+    <ion-card class="col m-1 card-button" [button]="true">
+      <div class="d-flex justify-content-center align-items-center flex-column m-1">
+        <ion-icon name="home" size="large" class="mt-3"></ion-icon>
+        <p class="mt-2">Desafios</p>
+      </div>
+    </ion-card>
+
+    <ion-card class="col m-1 card-button" [button]="true">
+      <div class="d-flex justify-content-center align-items-center flex-column m-1">
+        <ion-icon name="home" size="large" class="mt-3"></ion-icon>
+        <p class="mt-2">Treinos</p>
+      </div>
+    </ion-card>
+
+  </div>
+  <div class="row px-3">
+    <ion-card class="col m-1 card-button" [button]="true">
+      <div class="d-flex justify-content-center align-items-center flex-column m-1">
+        <ion-icon name="home" size="large" class="mt-3"></ion-icon>
+        <p class="mt-2">Personal</p>
+      </div>
+    </ion-card>
+    <ion-card class="col m-1 card-button" [button]="true">
+      <div class="d-flex justify-content-center align-items-center flex-column m-1">
+        <ion-icon name="home" size="large" class="mt-3"></ion-icon>
+        <p class="mt-2">Receitas</p>
+      </div>
+    </ion-card>
+  </div>
+  <div class="row px-3">
+    <ion-card class="col m-1 p-0">
+      <app-avisos />
+    </ion-card>
+  </div>
+</ion-content>

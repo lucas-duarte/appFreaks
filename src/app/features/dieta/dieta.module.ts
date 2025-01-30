@@ -1,0 +1,83 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import {
+    IonBackButton,
+    IonButtons,
+    IonNav,
+    IonNavLink,
+    IonIcon,
+    IonText,
+    IonChip,
+    IonButton,
+    IonCol,
+    IonGrid,
+    IonRow,
+    IonCardContent,
+    IonCard,
+    IonCardSubtitle,
+    IonCardTitle,
+    IonCardHeader,
+    IonRefresherContent,
+    IonRefresher,
+    IonContent,
+    IonHeader,
+    IonTitle,
+    IonToolbar
+} from '@ionic/angular/standalone';
+
+@NgModule({
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonBackButton,
+        IonButtons,
+        IonNav,
+        IonNavLink,
+        IonIcon,
+        IonText,
+        IonChip,
+        IonButton,
+        IonCol,
+        IonGrid,
+        IonRow,
+        IonCardContent,
+        IonCard,
+        IonCardSubtitle,
+        IonCardTitle,
+        IonCardHeader,
+        IonRefresherContent,
+        IonRefresher,
+        IonContent,
+        IonHeader,
+        IonTitle,
+        IonToolbar
+    ],
+    exports: [
+        CommonModule,
+        FormsModule,
+        IonBackButton,
+        IonButtons,
+        IonNav,
+        IonNavLink,
+        IonIcon,
+        IonText,
+        IonChip,
+        IonButton,
+        IonCol,
+        IonGrid,
+        IonRow,
+        IonCardContent,
+        IonCard,
+        IonCardSubtitle,
+        IonCardTitle,
+        IonCardHeader,
+        IonRefresherContent,
+        IonRefresher,
+        IonContent,
+        IonHeader,
+        IonTitle,
+        IonToolbar
+    ]
+})
+export class DietaModule { }

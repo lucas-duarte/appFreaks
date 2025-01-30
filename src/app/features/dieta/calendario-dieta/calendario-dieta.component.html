@@ -1,0 +1,62 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Dieta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-refresher slot="fixed" (ionRefresh)="handleRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let dieta of dietas" size="3">
+
+        <ion-card class="m-0 text-center" [ngClass]="{
+          'current-day': dieta.status === 'atual',
+          'past-day': dieta.status === 'concluido',
+          'preview-day': dieta.status === 'preview',
+          'future-day': (dieta.status === 'bloqueado')
+        }">
+
+          <!-- Renderizar navegação apenas para status "atual" ou "preview" -->
+          <ng-container *ngIf="dieta.status === 'atual' || dieta.status === 'preview'; else restrictedDayTemplate">
+            <ion-nav-link router-direction="forward" [component]="component" [componentProps]="dieta">
+              <ion-card-header class="p-0" [ngClass]="{ 'header-white': dieta.status === 'atual' }">
+                <ion-text>
+                  <h1 style="font-size: 30px;">{{ dieta.dia }}</h1>
+                </ion-text>
+                <ion-text class="m-2">Dia</ion-text>
+              </ion-card-header>
+
+              <ion-card-content class="d-flex justify-content-center">
+                <ion-text *ngIf="dieta.status === 'atual'" class="header-white mt-2">Atual</ion-text>
+              </ion-card-content>
+            </ion-nav-link>
+          </ng-container>
+
+          <!-- Template para status "concluido" e "bloqueado" -->
+          <ng-template #restrictedDayTemplate>
+            <ion-card-header class="p-0">
+              <ion-text>
+                <h1 style="font-size: 30px;">{{ dieta.dia }}</h1>
+              </ion-text>
+              <ion-text class="m-2">Dia</ion-text>
+            </ion-card-header>
+
+            <ion-card-content class="d-flex justify-content-center">
+              <!-- Ícone de check para status "concluido" -->
+              <ion-icon *ngIf="dieta.status === 'concluido'" name="checkmark" style="font-size: 25px;" color="secondary"></ion-icon>
+              <!-- Ícone de cadeado para status "bloqueado" -->
+              <ion-icon *ngIf="dieta.status === 'bloqueado'" name="lock-closed" style="font-size: 25px;" color="medium"></ion-icon>
+            </ion-card-content>
+          </ng-template>
+
+        </ion-card>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,33 @@
+.current-day {
+  background-color: #3f74ad; /* Azul */
+  color: white; /* Texto branco */
+  height: 120px;
+}
+
+.past-day {
+  background-color: #fff; /* Cinza claro */
+  height: 120px;
+}
+
+.preview-day {
+  background-color: #cecece; /* Cinza mais escuro */
+  height: 120px;
+}
+
+.future-day {
+  background-color: #a3a3a3; /* Cinza mais escuro */
+  height: 120px;
+}
+
+.header-white {
+  color: white;
+}
+
+.header-white h1,
+.header-white ion-text {
+  color: white !important;
+}
+
+ion-content {
+  --background: #f7f7f7 !important;
+}
